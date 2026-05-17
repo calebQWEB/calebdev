@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { getAllPosts } from "@/lib/posts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Articles and thoughts by Caleb Ochai on software engineering, full-stack development, and stuff.",
+};
 
 export default function BlogPage() {
   const allPosts = getAllPosts();
