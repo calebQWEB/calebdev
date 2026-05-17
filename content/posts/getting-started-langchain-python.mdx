@@ -1,0 +1,47 @@
+---
+title: "Getting Started with LangChain in Python"
+date: "2026-01-01"
+tag: "AI"
+description: "An introduction to LangChain — what it is, why it matters for developers building AI-powered applications, and how to get up and running with your first chain in Python."
+---
+
+If you've been following the AI space, you've probably heard of LangChain. It's one of the most popular frameworks for building applications powered by large language models (LLMs). In this post, I'll walk you through what it is, why it matters, and how to get started.
+
+## What is LangChain?
+
+LangChain is a framework that makes it easier to build applications that use LLMs like GPT-4 or Claude. It provides abstractions for common patterns — like chaining multiple prompts together, retrieving context from documents, and managing conversation memory.
+
+## Why Does It Matter?
+
+Raw LLM APIs are powerful but limited on their own. LangChain lets you build more complex workflows — like an AI analyst that reads your Excel files and answers questions about them, or a chatbot that remembers previous messages in a conversation.
+
+## Getting Started
+
+First, install LangChain:
+
+```bash
+pip install langchain langchain-openai
+```
+
+Then set up your first chain:
+
+```python
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import HumanMessage
+
+llm = ChatOpenAI(model="gpt-4", temperature=0)
+response = llm([HumanMessage(content="Explain LangChain in one sentence.")])
+print(response.content)
+```
+
+## Chains
+
+The real power of LangChain comes from chaining steps together. For example, you can chain a document loader, a text splitter, an embedder, and a retriever to build a system that answers questions about your own documents.
+
+## My Experience
+
+I used LangChain and LangGraph when building the AI Analyst project — a tool that extracts insights from Excel files and provides AI-generated analysis. LangGraph in particular was useful for managing multi-step reasoning flows.
+
+## What's Next
+
+LangChain is evolving fast. LangGraph, LangServe, and LangSmith are extending the ecosystem in exciting directions. If you're a developer interested in AI, it's well worth exploring.

@@ -1,0 +1,32 @@
+---
+title: "How I Built Viciniti — A Location-Based Marketplace"
+date: "2026-02-01"
+tag: "Full Stack"
+description: "The story behind building a full-stack, peer-to-peer community marketplace with verified profiles, real-time messaging, and secure payments via Flutterwave — and what I learned along the way."
+---
+
+Viciniti started with a simple observation: buying and selling locally is still unnecessarily hard. Existing platforms are either too broad, lack trust mechanisms, or don't account for the hyper-local nature of community commerce.
+
+## The Idea
+
+The core idea was simple — a marketplace where everyone within the same geographic area could buy and sell items, offer services, and hire locally. Trust-based, peer-to-peer, and community-first.
+
+## The Architecture
+
+Viciniti is a full-stack application. The frontend is built with Next.js and Tailwind CSS, giving us a fast, responsive experience out of the box. The backend handles user authentication, listings, real-time messaging, and payment processing.
+
+## Payments with Flutterwave
+
+One of the most important decisions was choosing Flutterwave for payments. It's well-suited for the Nigerian market, supports multiple payment methods, and has a reliable API. Revenue is generated through a 5% transaction fee on all completed payments — keeping the platform sustainable without charging users upfront.
+
+## The Single-Role Model
+
+One of the most interesting design decisions was the single-role user model. Every account can simultaneously act as a buyer, seller, service provider, and client. This removes friction — you don't need multiple accounts, and you can switch between roles seamlessly within the same session.
+
+## Real-Time Messaging
+
+Real-time messaging was built to facilitate communication between buyers and sellers before a transaction is completed. This builds trust and reduces the risk of failed transactions.
+
+## What's Next
+
+Viciniti is live at viciniti-frontend.vercel.app. The next steps include expanding the verification system, improving location accuracy, and rolling out to more communities.
