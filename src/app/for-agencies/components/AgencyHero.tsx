@@ -15,7 +15,7 @@ export default function AgencyHero() {
           and custom business applications, I help web design agencies take on
           projects beyond traditional websites—all under your brand.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+        <div className="mt-10 grid items-center text-center lg:text-left lg:flex flex-col sm:flex-row gap-4">
           <a
             href="#projects"
             className="px-5 py-2 bg-violet-600 hover:bg-violet-700 text-white text-[12px] font-semibold rounded-full transition-all duration-200 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40"
@@ -30,7 +30,7 @@ export default function AgencyHero() {
           </a>
         </div>
 
-        <div className="my-10 inline-flex flex-wrap items-center gap-1 rounded-full border border-gray-200 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/50 backdrop-blur-sm p-1">
+        <div className="my-10 inline-flex flex-wrap items-center gap-1 rounded-md lg:rounded-full border border-gray-200 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/50 backdrop-blur-sm p-1">
           <span className="flex items-center gap-2 px-4 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300">
             <ShieldCheck
               className="w-4 h-4 text-violet-500"
