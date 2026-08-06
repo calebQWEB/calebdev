@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { error } from "console";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -30,6 +31,14 @@ export async function POST(req: Request) {
         </div>
       `,
     });
+
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: "Something went wrong. Please try again." },
+        { status: 500 },
+      );
+    }
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
