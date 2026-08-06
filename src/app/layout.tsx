@@ -80,7 +80,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${firaCode.variable} antialiased bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-[var(--font-inter)]`}
       >
-        <Navbar />
         {children}
         <Footer />
       </body>

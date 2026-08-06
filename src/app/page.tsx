@@ -5,17 +5,21 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Blog />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Blog />
+        <Contact />
+      </main>
+    </>
   );
 }
