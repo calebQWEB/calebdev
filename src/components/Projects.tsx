@@ -35,10 +35,10 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-10">
         {/* Section label */}
-        <p className="text-violet-500 font-mono text-sm tracking-widest uppercase mb-2">
+        <p className="text-primary-500 font-mono text-sm tracking-widest uppercase mb-2">
           What I&apos;ve built
         </p>
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-16">
+        <h2 className="text-4xl font-bold text-ink dark:text-white mb-16">
           Projects
         </h2>
 
@@ -52,20 +52,20 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`relative bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 border transition-all duration-200 hover:shadow-lg ${
                 project.featured
-                  ? "border-violet-500/40 hover:border-violet-500"
-                  : "border-gray-100 dark:border-gray-800 hover:border-violet-500/30"
+                  ? "border-accent-500/40 hover:border-accent-500"
+                  : "border-gray-100 dark:border-gray-800 hover:border-accent-500/30"
               }`}
             >
               {/* Featured badge */}
               {project.featured && (
-                <div className="absolute top-6 right-6 flex items-center gap-1 px-3 py-1 bg-violet-500/10 text-violet-500 rounded-full text-xs font-mono">
-                  <Star className="w-3 h-3 fill-violet-500" />
+                <div className="absolute top-6 right-6 flex items-center gap-1 px-3 py-1 bg-accent-500/10 text-accent-500 rounded-full text-xs font-mono">
+                  <Star className="w-3 h-3 fill-accent-500" />
                   Featured
                 </div>
               )}
 
               {/* Project name */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-2xl font-bold text-ink dark:text-white mb-3">
                 {project.name}
               </h3>
 
@@ -93,7 +93,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200"
+                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-500 dark:hover:text-accent-400 transition-colors duration-200"
                   >
                     <Computer className="w-4 h-4" />
                     View Code
@@ -104,7 +104,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200"
+                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-500 dark:hover:text-accent-400 transition-colors duration-200"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live Demo

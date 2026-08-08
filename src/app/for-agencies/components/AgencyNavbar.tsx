@@ -36,9 +36,9 @@ export default function AgencyNavbar() {
       <div className="max-w-6xl mx-auto px-10 py-5 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold text-gray-900 dark:text-white tracking-tight"
+          className="text-xl font-bold text-ink dark:text-white tracking-tight"
         >
-          Caleb<span className="text-blue-500">.</span>
+          Caleb<span className="text-primary-600">.</span>
         </Link>
 
         <ul className="hidden md:flex items-center gap-8">
@@ -46,7 +46,7 @@ export default function AgencyNavbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200"
+                className="text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -57,7 +57,7 @@ export default function AgencyNavbar() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => setIsDark(!isDark)}
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+            className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
             aria-label="Toggle theme"
           >
             {isDark ? (
@@ -133,7 +133,7 @@ export default function AgencyNavbar() {
                 <Link
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-sm text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                  className="text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                 >
                   {link.label}
                 </Link>

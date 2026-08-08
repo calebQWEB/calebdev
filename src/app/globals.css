@@ -7,18 +7,31 @@
 :root {
   --background: #ffffff;
   --foreground: #111111;
+  --color-ink: #1a1c20;
 
-  /* Violet - Primary accent */
-  --color-primary-50: #f5f3ff;
-  --color-primary-100: #ede9fe;
-  --color-primary-200: #ddd6fe;
-  --color-primary-300: #c4b5fd;
-  --color-primary-400: #a78bfa;
-  --color-primary-500: #8b5cf6;
-  --color-primary-600: #7c3aed;
-  --color-primary-700: #6d28d9;
-  --color-primary-800: #5b21b6;
-  --color-primary-900: #4c1d95;
+  /* Slate blue - Primary accent */
+  --color-primary-50: #f1f4f7;
+  --color-primary-100: #dfe6ec;
+  --color-primary-200: #c0cddb;
+  --color-primary-300: #9bb0c4;
+  --color-primary-400: #7590a8;
+  --color-primary-500: #5c7590;
+  --color-primary-600: #496280;
+  --color-primary-700: #3c516b;
+  --color-primary-800: #304256;
+  --color-primary-900: #263444;
+
+  /* Terracotta - Accent */
+  --color-accent-50: #fbf1ec;
+  --color-accent-100: #f5ddd0;
+  --color-accent-200: #eab89f;
+  --color-accent-300: #dc9370;
+  --color-accent-400: #c97a52;
+  --color-accent-500: #b36741;
+  --color-accent-600: #965536;
+  --color-accent-700: #78442c;
+  --color-accent-800: #5c3522;
+  --color-accent-900: #452819;
 
   /* Gray */
   --color-earth-50: #f9fafb;
@@ -49,10 +62,22 @@
   --color-primary-800: var(--color-primary-800);
   --color-primary-900: var(--color-primary-900);
 
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-200: var(--color-accent-200);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-800: var(--color-accent-800);
+  --color-accent-900: var(--color-accent-900);
+
   --color-earth-50: var(--color-earth-50);
   --color-earth-100: var(--color-earth-100);
   --color-earth-200: var(--color-earth-200);
   --color-earth-300: var(--color-earth-300);
+  --color-ink: var(--color-ink);
 }
 
 /* Base styles */

@@ -39,9 +39,9 @@ const contactDetails = [
 
 export default function AgencyCTA() {
   return (
-    <section id="contact" className="py-[120px] bg-white dark:bg-gray-950">
+    <section id="contact" className="py-30 bg-white dark:bg-gray-950">
       <div className="max-w-3xl mx-auto px-10 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-ink dark:text-white tracking-tight">
           Need a Development Partner for Your Next Client Project?
         </h2>
         <p className="mt-6 text-[12px] text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl mx-auto">
@@ -53,13 +53,13 @@ export default function AgencyCTA() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="mailto:calebochai09@gmail.com"
-            className="px-5 py-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40"
+            className="px-5 py-2 bg-accent-600 hover:bg-accent-700 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-accent-500/25 hover:shadow-accent-500/40"
           >
             Start a Conversation
           </a>
           <Link
             href="/"
-            className="px-5 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-full border border-gray-300 dark:border-gray-700 hover:border-violet-500 hover:text-violet-500 transition-colors text-center"
+            className="px-5 py-2 bg-white dark:bg-gray-800 text-ink dark:text-white font-semibold rounded-full border border-gray-300 dark:border-gray-700 hover:border-primary-500 hover:text-primary-500 transition-colors text-center"
           >
             View My Portfolio
           </Link>
@@ -75,7 +75,7 @@ export default function AgencyCTA() {
                 rel={
                   href.startsWith("http") ? "noopener noreferrer" : undefined
                 }
-                className="flex items-center gap-2 text-[12px] text-gray-600 dark:text-gray-300 hover:text-violet-500 dark:hover:text-violet-400 transition-colors"
+                className="flex items-center gap-2 text-[12px] text-gray-600 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
               >
                 <Icon className="w-4 h-4" strokeWidth={2} />
                 {label}

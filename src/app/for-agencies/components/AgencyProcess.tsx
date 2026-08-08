@@ -36,10 +36,10 @@ const trustPoints = [
 
 export default function AgencyProcess() {
   return (
-    <section className="pt-[120px] pb-[120px] bg-earth-50 dark:bg-gray-950">
+    <section className="pt-18 lg:pt-30 bg-earth-50 dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-10">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-ink dark:text-white tracking-tight">
             How We Work Together
           </h2>
           <p className="mt-6 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -56,10 +56,10 @@ export default function AgencyProcess() {
               className="flex flex-col items-center text-center"
             >
               <step.icon
-                className="w-9 h-9 text-violet-900"
+                className="w-9 h-9 text-primary-900"
                 strokeWidth={1.75}
               />
-              <h3 className="mt-4 text-base font-semibold text-gray-900 dark:text-white">
+              <h3 className="mt-4 text-base font-semibold text-ink dark:text-white">
                 {step.title}
               </h3>
               <p className="mt-2 text-[12px] text-gray-600 dark:text-gray-300 leading-relaxed max-w-[240px]">
@@ -70,7 +70,7 @@ export default function AgencyProcess() {
         </div>
 
         <div className="mt-[60px] max-w-xl mx-auto rounded-2xl border border-earth-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-8 py-8">
-          <h3 className="text-base font-semibold text-gray-900 dark:text-white text-center">
+          <h3 className="text-base font-semibold text-ink dark:text-white text-center">
             What You Can Expect
           </h3>
           <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
@@ -80,7 +80,7 @@ export default function AgencyProcess() {
                 className="flex items-center gap-2 text-[12px] text-gray-600 dark:text-gray-300"
               >
                 <Check
-                  className="w-4 h-4 text-violet-900 flex-shrink-0"
+                  className="w-4 h-4 text-primary-900 flex-shrink-0"
                   strokeWidth={2.5}
                 />
                 {point}

@@ -3,10 +3,10 @@ export default function About() {
     <section id="about" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-10">
         {/* Section label */}
-        <p className="text-violet-500 font-mono text-sm tracking-widest uppercase mb-2">
+        <p className="text-primary-500 font-mono text-sm tracking-widest uppercase mb-2">
           Get to know me
         </p>
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-16">
+        <h2 className="text-4xl font-bold text-ink dark:text-white mb-16">
           About Me
         </h2>
 
@@ -15,7 +15,7 @@ export default function About() {
           <div className="flex justify-center">
             <div className="relative w-72 h-72">
               {/* Decorative border */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-violet-500/30 translate-x-4 translate-y-4" />
+              <div className="absolute inset-0 rounded-2xl border-2 border-primary-500/30 translate-x-4 translate-y-4" />
               {/* Avatar box */}
               <div className="relative w-full h-full rounded-2xl bg-gray-200 dark:bg-gray-800 flex flex-col items-center justify-center border border-gray-200 dark:border-gray-700 overflow-hidden">
                 <svg
@@ -61,7 +61,7 @@ export default function About() {
                   key={item.label}
                   className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700"
                 >
-                  <p className="text-2xl font-bold text-violet-500">
+                  <p className="text-2xl font-bold text-primary-500">
                     {item.value}
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
@@ -76,7 +76,7 @@ export default function About() {
               <a
                 href="/caleb-ochai-cv.pdf"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-700 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-accent-600 hover:bg-accent-700 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-accent-500/25 hover:shadow-accent-500/40"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

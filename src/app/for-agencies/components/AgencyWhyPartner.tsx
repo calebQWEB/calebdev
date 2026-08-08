@@ -48,9 +48,12 @@ const benefits = [
 
 export default function AgencyWhyPartner() {
   return (
-    <section id="partners" className="py-19 bg-earth-50 dark:bg-gray-950">
+    <section
+      id="partners"
+      className="py-8 lg:py-19 bg-earth-50 dark:bg-gray-950"
+    >
       <div className="max-w-6xl mx-auto px-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-ink dark:text-white tracking-tight">
           Why Agencies Partner With Me
         </h2>
         <p className="mt-4 text-[14px] text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
@@ -64,12 +67,12 @@ export default function AgencyWhyPartner() {
           {benefits.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="p-5 rounded-3xl bg-white dark:bg-gray-900 border border-earth-200 dark:border-gray-800 shadow-sm hover:shadow-md hover:border-violet-200 dark:hover:border-violet-900 transition-all duration-200"
+              className="p-5 rounded-3xl bg-white dark:bg-gray-900 border border-earth-200 dark:border-gray-800 shadow-sm hover:shadow-md hover:border-accent-200 dark:hover:border-accent-900 transition-all duration-200"
             >
-              <div className="w-10 h-10 rounded-xl bg-violet-50 dark:bg-violet-500/10 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-violet-500" strokeWidth={2} />
+              <div className="w-10 h-10 rounded-xl bg-primary-50 dark:bg-primary-500/10 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-primary-500" strokeWidth={2} />
               </div>
-              <h3 className="mt-4 text-base font-semibold text-gray-900 dark:text-white">
+              <h3 className="mt-4 text-base font-semibold text-ink dark:text-white">
                 {title}
               </h3>
               <p className="mt-2 text-[12px] text-gray-600 dark:text-gray-300 leading-relaxed">

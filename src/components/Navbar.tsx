@@ -56,15 +56,15 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-10 py-5 flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-bold text-gray-900 dark:text-white tracking-tight"
+            className="text-xl font-bold text-ink dark:text-white tracking-tight"
           >
-            Caleb<span className="text-blue-500">.</span>
+            Caleb<span className="text-primary-600">.</span>
           </Link>
 
           <div className="flex items-center gap-4">
             <button
               onClick={() => setIsDark(!isDark)}
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               aria-label="Toggle theme"
             >
               {isDark ? (
@@ -76,7 +76,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setMenuOpen(true)}
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               aria-label="Open menu"
             >
               <Menu className="w-6 h-6" strokeWidth={2} />
@@ -105,12 +105,12 @@ export default function Navbar() {
               className="fixed top-0 right-0 h-full w-full max-w-sm bg-white dark:bg-gray-950 z-50 shadow-2xl flex flex-col"
             >
               <div className="flex items-center justify-between px-8 py-6 border-b border-earth-200 dark:border-gray-800">
-                <span className="text-lg font-bold text-gray-900 dark:text-white tracking-tight">
+                <span className="text-lg font-bold text-ink dark:text-white tracking-tight">
                   Menu
                 </span>
                 <button
                   onClick={closeMenu}
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                  className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   aria-label="Close menu"
                 >
                   <X className="w-6 h-6" strokeWidth={2} />
@@ -124,7 +124,7 @@ export default function Navbar() {
                       <Link
                         href={link.href}
                         onClick={closeMenu}
-                        className="block py-3 text-base text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                        className="block py-3 text-base text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -134,7 +134,7 @@ export default function Navbar() {
                   <li>
                     <button
                       onClick={() => setPartnersOpen(!partnersOpen)}
-                      className="w-full flex items-center justify-between py-3 text-base text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                      className="w-full flex items-center justify-between py-3 text-base text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                     >
                       Partners
                       <ChevronDown
@@ -159,7 +159,7 @@ export default function Navbar() {
                               <Link
                                 href={link.href}
                                 onClick={closeMenu}
-                                className="block py-2.5 text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                                className="block py-2.5 text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                               >
                                 {link.label}
                               </Link>

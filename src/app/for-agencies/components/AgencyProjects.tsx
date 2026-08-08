@@ -88,9 +88,9 @@ const projects = [
 
 export default function AgencyProjects() {
   return (
-    <section id="projects" className="py-24 bg-white dark:bg-gray-950">
+    <section id="projects" className="py-10 lg:py-24 bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-ink dark:text-white tracking-tight">
           Proof Through Real Projects
         </h2>
         <p className="mt-4 text-[14px] text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
@@ -121,11 +121,11 @@ export default function AgencyProjects() {
                 </div>
 
                 <div className="w-full lg:w-1/2">
-                  <span className="inline-block rounded-full border border-violet-200 dark:border-violet-900 bg-violet-50 dark:bg-violet-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-violet-600 dark:text-violet-400">
+                  <span className="inline-block rounded-full border border-accent-200 dark:border-accent-900 bg-accent-50 dark:bg-accent-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-accent-600 dark:text-accent-400">
                     {project.badge}
                   </span>
 
-                  <h3 className="mt-3 text-xl font-semibold text-gray-900 dark:text-white tracking-tight">
+                  <h3 className="mt-3 text-xl font-semibold text-ink dark:text-white tracking-tight">
                     {project.title}
                   </h3>
 
@@ -153,7 +153,7 @@ export default function AgencyProjects() {
                     ))}
                   </div>
 
-                  <p className="mt-6 pl-4 border-l-2 border-violet-500 text-[13px] text-gray-700 dark:text-gray-200 italic leading-relaxed">
+                  <p className="mt-6 pl-4 border-l-2 border-accent-500 text-[13px] text-gray-700 dark:text-gray-200 italic leading-relaxed">
                     {project.outcome}
                   </p>
 

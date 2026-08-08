@@ -34,10 +34,10 @@ export default function Experience() {
     <section id="experience" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-10">
         {/* Section label */}
-        <p className="text-violet-500 font-mono text-sm tracking-widest uppercase mb-2">
+        <p className="text-primary-500 font-mono text-sm tracking-widest uppercase mb-2">
           Where I&apos;ve worked
         </p>
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-16">
+        <h2 className="text-4xl font-bold text-ink dark:text-white mb-16">
           Work Experience
         </h2>
 
@@ -59,14 +59,14 @@ export default function Experience() {
                 }`}
               >
                 {/* Card */}
-                <div className="w-full md:w-1/2 bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md hover:border-violet-500/30 transition-all duration-200">
+                <div className="w-full md:w-1/2 bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md hover:border-accent-500/30 transition-all duration-200">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                      <h3 className="text-lg font-bold text-ink dark:text-white">
                         {exp.title}
                       </h3>
-                      <p className="text-violet-500 font-medium text-sm mt-1">
+                      <p className="text-primary-500 font-medium text-sm mt-1">
                         {exp.company}
                       </p>
                     </div>
@@ -75,7 +75,7 @@ export default function Experience() {
                         {exp.period}
                       </span>
                       {exp.current && (
-                        <span className="px-2 py-1 text-xs bg-violet-500/10 text-violet-500 rounded-full font-mono">
+                        <span className="px-2 py-1 text-xs bg-accent-500/10 text-accent-500 rounded-full font-mono">
                           Current
                         </span>
                       )}
@@ -89,7 +89,9 @@ export default function Experience() {
                         key={i}
                         className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed"
                       >
-                        <span className="text-violet-500 mt-1 shrink-0">▹</span>
+                        <span className="text-primary-500 mt-1 shrink-0">
+                          ▹
+                        </span>
                         {point}
                       </li>
                     ))}
@@ -109,7 +111,7 @@ export default function Experience() {
                 </div>
 
                 {/* Timeline dot */}
-                <div className="hidden md:flex absolute left-1/2 top-6 -translate-x-1/2 w-4 h-4 rounded-full bg-violet-500 border-4 border-white dark:border-gray-900 z-10" />
+                <div className="hidden md:flex absolute left-1/2 top-6 -translate-x-1/2 w-4 h-4 rounded-full bg-primary-500 border-4 border-white dark:border-gray-900 z-10" />
 
                 {/* Empty space for the other side */}
                 <div className="hidden md:block w-1/2" />

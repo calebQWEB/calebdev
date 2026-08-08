@@ -45,10 +45,10 @@ export default function Skills() {
     <section id="skills" className="py-24 bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-10">
         {/* Section label */}
-        <p className="text-violet-500 font-mono text-sm tracking-widest uppercase mb-2">
+        <p className="text-primary-500 font-mono text-sm tracking-widest uppercase mb-2">
           What I work with
         </p>
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-16">
+        <h2 className="text-4xl font-bold text-ink dark:text-white mb-16">
           Skills & Tech Stack
         </h2>
 
@@ -59,14 +59,14 @@ export default function Skills() {
             return (
               <div
                 key={group.category}
-                className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-violet-500/30 transition-all duration-200"
+                className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-primary-500/30 transition-all duration-200"
               >
                 {/* Category header */}
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="p-2 bg-violet-500/10 rounded-lg">
-                    <Icon className="w-5 h-5 text-violet-500" />
+                  <div className="p-2 bg-primary-500/10 rounded-lg">
+                    <Icon className="w-5 h-5 text-primary-500" />
                   </div>
-                  <h3 className="text-base font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base font-semibold text-ink dark:text-white">
                     {group.category}
                   </h3>
                 </div>
@@ -76,7 +76,7 @@ export default function Skills() {
                   {group.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 text-sm font-mono bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-700 hover:border-violet-500 hover:text-violet-500 transition-all duration-200"
+                      className="px-3 py-1 text-sm font-mono bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-700 hover:border-accent-500 hover:text-accent-500 transition-all duration-200"
                     >
                       {skill}
                     </span>

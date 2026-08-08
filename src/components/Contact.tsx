@@ -39,10 +39,10 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-10">
         {/* Section label */}
-        <p className="text-violet-500 font-mono text-sm tracking-widest uppercase mb-2">
+        <p className="text-primary-500 font-mono text-sm tracking-widest uppercase mb-2">
           Get in touch
         </p>
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-4xl font-bold text-ink dark:text-white mb-4">
           Contact Me
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-16 max-w-xl">
@@ -66,14 +66,14 @@ export default function Contact() {
                 href="mailto:calebochai09@gmail.com"
                 className="flex items-center gap-4 group"
               >
-                <div className="p-3 bg-violet-500/10 rounded-xl group-hover:bg-violet-500 transition-colors duration-200">
-                  <Mail className="w-5 h-5 text-violet-500 group-hover:text-white transition-colors duration-200" />
+                <div className="p-3 bg-accent-500/10 rounded-xl group-hover:bg-accent-500 transition-colors duration-200">
+                  <Mail className="w-5 h-5 text-accent-500 group-hover:text-white transition-colors duration-200" />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 dark:text-gray-500 font-mono mb-1">
                     Email
                   </p>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-violet-500 transition-colors duration-200">
+                  <p className="text-sm font-semibold text-ink dark:text-white group-hover:text-accent-500 transition-colors duration-200">
                     calebochai09@gmail.com
                   </p>
                 </div>
@@ -85,14 +85,14 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 group"
               >
-                <div className="p-3 bg-violet-500/10 rounded-xl group-hover:bg-violet-500 transition-colors duration-200">
-                  <Link2 className="w-5 h-5 text-violet-500 group-hover:text-white transition-colors duration-200" />
+                <div className="p-3 bg-accent-500/10 rounded-xl group-hover:bg-accent-500 transition-colors duration-200">
+                  <Link2 className="w-5 h-5 text-accent-500 group-hover:text-white transition-colors duration-200" />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 dark:text-gray-500 font-mono mb-1">
                     LinkedIn
                   </p>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-violet-500 transition-colors duration-200">
+                  <p className="text-sm font-semibold text-ink dark:text-white group-hover:text-accent-500 transition-colors duration-200">
                     linkedin.com/in/caleb-ochai
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export default function Contact() {
                   setFormData({ ...formData, name: e.target.value })
                 }
                 placeholder="John Doe"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-200"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-ink dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all duration-200"
               />
             </div>
 
@@ -130,7 +130,7 @@ export default function Contact() {
                   setFormData({ ...formData, email: e.target.value })
                 }
                 placeholder="john@example.com"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-200"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-ink dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all duration-200"
               />
             </div>
 
@@ -146,14 +146,14 @@ export default function Contact() {
                   setFormData({ ...formData, message: e.target.value })
                 }
                 placeholder="Tell me about your project or just say hi..."
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-200 resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-ink dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all duration-200 resize-none"
               />
             </div>
 
             <button
               type="submit"
               disabled={status === "sending" || status === "sent"}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-700 disabled:opacity-60 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-accent-600 hover:bg-accent-700 disabled:opacity-60 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-accent-500/25 hover:shadow-accent-500/40"
             >
               {status === "sending" ? (
                 "Sending..."

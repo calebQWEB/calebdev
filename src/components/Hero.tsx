@@ -7,8 +7,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white dark:bg-gray-950">
       {/* Background gradient blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-violet-700/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary-700/10 rounded-full blur-3xl animate-pulse" />
       </div>
 
       {/* Content */}
@@ -16,18 +16,18 @@ export default function Hero() {
         {/* Left side */}
         <div className="flex flex-col items-start">
           {/* Greeting */}
-          <p className="text-violet-500 font-mono text-sm mb-4 tracking-widest uppercase">
+          <p className="text-primary-500 font-mono text-sm mb-4 tracking-widest uppercase">
             Hi there, I&apos;m
           </p>
 
           {/* Name */}
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight leading-tight">
-            Caleb <span className="text-violet-500">Ochai</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-ink dark:text-white mb-4 tracking-tight leading-tight">
+            Caleb <span className="text-primary-500">Ochai</span>
           </h1>
 
           {/* Typing animation */}
           <div className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-6 font-mono flex items-center gap-2">
-            <span className="text-violet-500">&gt;</span>
+            <span className="text-primary-500">&gt;</span>
             <Typewriter
               options={{
                 strings: [
@@ -55,13 +55,13 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 bg-violet-600 hover:bg-violet-700 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40"
+              className="px-6 py-3 bg-accent-600 hover:bg-accent-700 text-white font-semibold rounded-full transition-all duration-200 shadow-lg shadow-accent-500/25 hover:shadow-accent-500/40"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 border-2 border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white font-semibold rounded-full transition-all duration-200"
+              className="px-6 py-3 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-semibold rounded-full transition-all duration-200"
             >
               Contact Me
             </a>
@@ -70,7 +70,7 @@ export default function Hero() {
 
         {/* Right side — Code card */}
         <div className="hidden md:flex justify-center items-center">
-          <div className="w-full max-w-md bg-gray-900 dark:bg-gray-800/50 rounded-2xl shadow-2xl shadow-violet-500/10 border border-gray-700/50 overflow-hidden">
+          <div className="w-full max-w-md bg-gray-900 dark:bg-gray-800/50 rounded-2xl shadow-2xl shadow-primary-500/10 border border-gray-700/50 overflow-hidden">
             {/* Code card header */}
             <div className="flex items-center gap-2 px-4 py-3 bg-gray-800 dark:bg-gray-900/80 border-b border-gray-700/50">
               <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -84,7 +84,7 @@ export default function Hero() {
             {/* Code content */}
             <div className="p-6 font-mono text-sm leading-7">
               <p>
-                <span className="text-violet-400">const </span>
+                <span className="text-primary-400">const </span>
                 <span className="text-blue-300">caleb </span>
                 <span className="text-white">= {"{"}</span>
               </p>

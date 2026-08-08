@@ -7,9 +7,9 @@ export default function Footer() {
         {/* Left — Name */}
         <Link
           href="/"
-          className="text-base font-bold text-gray-900 dark:text-white tracking-tight"
+          className="text-base font-bold text-ink dark:text-white tracking-tight"
         >
-          Caleb<span className="text-violet-500">.</span>
+          Caleb<span className="text-primary-600">.</span>
         </Link>
 
         {/* Middle — Links */}
@@ -18,7 +18,7 @@ export default function Footer() {
             <a
               key={item}
               href={item === "Blog" ? "/blog" : `#${item.toLowerCase()}`}
-              className="text-xs font-mono text-gray-400 dark:text-gray-500 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200"
+              className="text-xs font-mono text-gray-400 dark:text-gray-500 hover:text-accent-500 dark:hover:text-accent-400 transition-colors duration-200"
             >
               {item}
             </a>
