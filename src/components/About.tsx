@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-24 bg-gray-50 dark:bg-gray-900">
@@ -11,24 +13,21 @@ export default function About() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          {/* Left — Avatar placeholder */}
+          {/* Left — Avatar */}
           <div className="flex justify-center">
             <div className="relative w-72 h-72">
               {/* Decorative border */}
               <div className="absolute inset-0 rounded-2xl border-2 border-primary-500/30 translate-x-4 translate-y-4" />
               {/* Avatar box */}
-              <div className="relative w-full h-full rounded-2xl bg-gray-200 dark:bg-gray-800 flex flex-col items-center justify-center border border-gray-200 dark:border-gray-700 overflow-hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-24 h-24 text-gray-400 dark:text-gray-600"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-                </svg>
-                <p className="text-xs text-gray-400 dark:text-gray-600 mt-2 font-mono">
-                  photo coming soon
-                </p>
+              <div className="relative w-full h-full rounded-2xl bg-gray-200 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-hidden">
+                <Image
+                  src="/caleb-photo.jpg"
+                  alt="Caleb Ochai"
+                  fill
+                  sizes="288px"
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
