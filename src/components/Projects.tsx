@@ -12,7 +12,28 @@ import {
   X,
 } from "lucide-react";
 
-const projects = [
+type ProjectCarouselProps = {
+  images: string[];
+  projectName: string;
+  onImageClick: (src: string) => void;
+};
+
+type ImageLightboxProps = {
+  src: string | null;
+  onClose: () => void;
+};
+
+type Project = {
+  name: string;
+  featured: boolean;
+  description: string;
+  stack: string[];
+  github: string | null;
+  live: string | null;
+  images: string[];
+};
+
+const projects: Project[] = [
   {
     name: "Viciniti",
     featured: true,
@@ -108,7 +129,7 @@ const projects = [
 const INITIAL_COUNT = 4;
 const LOAD_MORE_COUNT = 2;
 
-function ProjectCarousel({ images, projectName, onImageClick }) {
+function ProjectCarousel({ images, projectName, onImageClick }: ProjectCarouselProps) {
   const [current, setCurrent] = useState(0);
   const total = images.length;
 
@@ -191,7 +212,7 @@ function ProjectCarousel({ images, projectName, onImageClick }) {
   );
 }
 
-function ImageLightbox({ src, onClose }) {
+function ImageLightbox({ src, onClose }: ImageLightboxProps) {
   return (
     <AnimatePresence>
       {src && (
