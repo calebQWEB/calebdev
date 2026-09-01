@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Computer,
@@ -127,16 +127,48 @@ type ProjectCarouselProps = {
 function ProjectCarousel({ images, projectName, onImageClick }: ProjectCarouselProps) {
   const [current, setCurrent] = useState(0);
   const total = images.length;
+  const touchStartX = useRef<number | null>(null);
+  const isSwipe = useRef(false);
 
   const goTo = (i: number) => setCurrent((i + total) % total);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    isSwipe.current = false;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = e.touches[0].clientX - touchStartX.current;
+    if (Math.abs(diff) > 10) isSwipe.current = true;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) {
+        goTo(current - 1);
+      } else {
+        goTo(current + 1);
+      }
+    }
+    touchStartX.current = null;
+  };
 
   return (
       <div className="relative w-full h-56 sm:h-64 rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 mb-6 group">
         {/* Slide */}
         <button
             type="button"
-            onClick={() => images[current] && onImageClick(images[current])}
-            className="w-full h-full flex items-center justify-center cursor-zoom-in"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            onClick={() => {
+              if (isSwipe.current) return;
+              if (images[current]) onImageClick(images[current]);
+            }}
+            className="w-full h-full flex items-center justify-center cursor-zoom-in touch-pan-y"
             aria-label={`Preview ${projectName} screenshot ${current + 1}`}
         >
           {images[current] ? (
@@ -144,7 +176,7 @@ function ProjectCarousel({ images, projectName, onImageClick }: ProjectCarouselP
               <img
                   src={images[current]}
                   alt={`${projectName} screenshot ${current + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover pointer-events-none"
               />
           ) : (
               <div className="flex flex-col items-center gap-2 text-gray-400 dark:text-gray-600">
